@@ -10,8 +10,15 @@ import jakarta.servlet.annotation.*;
 public class ShopServlet extends HttpServlet {
     private String message;
 
-    @Inject
+    //@Inject
     Cashier cashier;
+
+    @Inject
+    public ShopServlet(Cashier cashier) {
+        this.cashier = cashier;
+    }
+
+
 
     public void init() {
         message = "Welcome to shop Alser!";
