@@ -13,13 +13,15 @@ public class ShopServlet extends HttpServlet {
     //@Inject
     Cashier cashier;
 
-    @Inject
+    //@Inject
     public ShopServlet(Cashier cashier) {
         this.cashier = cashier;
     }
 
-
-
+    @Inject
+    public void setCashier(Cashier cashier) {
+        this.cashier = cashier;
+    }
 
     public void init() {
         message = "Welcome to shop Alser!";
