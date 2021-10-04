@@ -8,6 +8,6 @@
 <h1><%= "Jakarta EE 9" %>
 </h1>
 <br/>
-<a href="shop">Hello Servlet</a>
+<a href="shop">Open ShopServlet</a>
 </body>
 </html>
