@@ -14,9 +14,9 @@ public class ShopServlet extends HttpServlet {
     Cashier cashier;
 
     //@Inject
-    public ShopServlet(Cashier cashier) {
-        this.cashier = cashier;
-    }
+//    public ShopServlet(Cashier cashier) {
+//        this.cashier = cashier;
+//    }
 
     @Inject
     public void setCashier(Cashier cashier) {
