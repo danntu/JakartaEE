@@ -20,6 +20,7 @@ public class ShopServlet extends HttpServlet {
 
 
 
+
     public void init() {
         message = "Welcome to shop Alser!";
     }
