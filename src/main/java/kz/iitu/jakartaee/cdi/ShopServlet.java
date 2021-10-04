@@ -1,4 +1,4 @@
-package kz.iitu.jakartaee;
+package kz.iitu.jakartaee.cdi;
 
 import java.io.*;
 
