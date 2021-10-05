@@ -15,13 +15,13 @@ public class ManagerServlet extends HttpServlet {
     private final Manager manager;
 
     @Inject
-    public ManagerServlet(@ComputerManagerQualifier  Manager manager) {
+    public ManagerServlet(@PhoneManagerQualifier  Manager manager) {
         this.manager = manager;
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String result = manager.sellProduct("Acer predator");
+        String result = manager.sellProduct("Samsung S20");
         resp.getWriter().println(result);
     }
 }
