@@ -13,15 +13,17 @@ import java.io.IOException;
 public class ManagerServlet extends HttpServlet {
 
     private final Manager manager;
+    private final TimeLogger timeLogger;
 
     @Inject
-    public ManagerServlet(Manager manager) {
+    public ManagerServlet(Manager manager, TimeLogger timeLogger) {
         this.manager = manager;
+        this.timeLogger = timeLogger;
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String result = manager.sellProduct("Acer");
+        String result = manager.sellProduct("Acer ") + timeLogger.getTime();
         resp.getWriter().println(result);
     }
 }
