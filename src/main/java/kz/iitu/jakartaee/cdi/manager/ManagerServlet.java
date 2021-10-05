@@ -1,6 +1,7 @@
 package kz.iitu.jakartaee.cdi.manager;
 
 import jakarta.inject.Inject;
+import jakarta.inject.Named;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -16,7 +17,7 @@ public class ManagerServlet extends HttpServlet {
     private final TimeLogger timeLogger;
 
     @Inject
-    public ManagerServlet(Manager manager, TimeLogger timeLogger) {
+    public ManagerServlet(@Named("CompManager") Manager manager, TimeLogger timeLogger) {
         this.manager = manager;
         this.timeLogger = timeLogger;
     }
