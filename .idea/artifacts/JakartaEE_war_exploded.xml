@@ -14,6 +14,17 @@
         <element id="directory" name="classes">
           <element id="module-output" name="JakartaEE" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.apache.openwebbeans:openwebbeans-impl:2.0.23" />
+          <element id="library" level="project" name="Maven: org.apache.xbean:xbean-finder-shaded:4.18" />
+          <element id="library" level="project" name="Maven: org.apache.xbean:xbean-asm9-shaded:4.18" />
+          <element id="library" level="project" name="Maven: org.apache.xbean:xbean-asm-util:4.18" />
+          <element id="library" level="project" name="Maven: org.apache.openwebbeans:openwebbeans-spi:2.0.23" />
+          <element id="library" level="project" name="Maven: javax.enterprise:cdi-api:2.0.SP1" />
+          <element id="library" level="project" name="Maven: javax.el:javax.el-api:3.0.0" />
+          <element id="library" level="project" name="Maven: javax.interceptor:javax.interceptor-api:1.2" />
+          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/JakartaEE-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
