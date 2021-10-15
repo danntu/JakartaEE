@@ -9,5 +9,6 @@
 </h1>
 <br/>
 <a href="shop">Open ShopServlet</a>
+<a href="expressionLanguage.jsp">Bean EL</a>
 </body>
 </html>
