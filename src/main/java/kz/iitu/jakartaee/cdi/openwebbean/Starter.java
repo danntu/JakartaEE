@@ -1,13 +1,8 @@
 package kz.iitu.jakartaee.cdi.openwebbean;
 
-import javax.enterprise.inject.spi.Bean;
 import jakarta.inject.Inject;
-import org.apache.webbeans.config.WebBeansContext;
-import org.apache.webbeans.spi.ContainerLifecycle;
 import org.jboss.weld.environment.se.Weld;
 import org.jboss.weld.environment.se.WeldContainer;
-
-import javax.enterprise.inject.spi.BeanManager;
 
 public class Starter {
 
