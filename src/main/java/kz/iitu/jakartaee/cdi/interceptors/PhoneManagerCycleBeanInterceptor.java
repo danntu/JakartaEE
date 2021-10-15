@@ -7,6 +7,7 @@ import jakarta.interceptor.Interceptors;
 
 @RequestScoped
 @Interceptors({Interceptor.class, InterceptorThree.class})
+@Four
 public class PhoneManagerCycleBeanInterceptor {
 
     public PhoneManagerCycleBeanInterceptor() {
