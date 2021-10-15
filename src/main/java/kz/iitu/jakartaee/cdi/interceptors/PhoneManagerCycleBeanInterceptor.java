@@ -6,14 +6,14 @@ import jakarta.interceptor.ExcludeClassInterceptors;
 import jakarta.interceptor.Interceptors;
 
 @RequestScoped
-@Interceptors(Interceptor.class)
+@Interceptors({Interceptor.class, InterceptorThree.class})
 public class PhoneManagerCycleBeanInterceptor {
 
     public PhoneManagerCycleBeanInterceptor() {
         System.out.println("constructor");
     }
 
-    //@Interceptors(Interceptor.class)
+    @Interceptors({InterceptorOne.class, InterceptorTwo.class})
     public int  getPricePhone(){
         System.out.println("getPricePhone");
         return 100;
